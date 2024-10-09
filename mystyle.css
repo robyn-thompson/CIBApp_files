@@ -1,0 +1,144 @@
+	body {
+            background-color: #5F9EA0;
+            font-family: Verdana;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 25px auto;
+            padding: 10px 10px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */ 
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control table,
+		.form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 2px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 10px;
+            display: in-block;
+            width: 100%;
+            table-layout:auto;
+        }
+ 
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        .form-control input[type="submit"] {
+            background-color: #5F9EA0;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+		 .form-control td {
+        	padding:10px 0;
+		}
+    	table,tr	{width:95%;}
+
+		a	{color: navy}
+
+ progress {
+            width: 100%;
+         max-width: 500px;
+            height: 20px;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: #eee;
+            border-radius: 10px;
+            box-shadow: inset 0px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #5F9EA0;
+            border-radius: 10px;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: #5F9EA0;
+            border-radius: 10px;
+        }
+		.progress-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+		.label-left, .label-right {
+            width: 20%;
+            text-align: center;
+        }
+		.progress-bar {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+
+@media (max-width: 500px) {
+    .form-control table,
+    .form-control input,
+    .form-control label {
+        width: 100%;
+        display: block;
+        font-size:12px:
+    }
+
+    .form-control td {
+        padding: 10px 0;
+    }
+    .form-control {
+        display: flex;
+        flex-direction: column;
+    }
+     progress {
+            width: 100%;
+         	max-width: 500px;
+            height: 20px;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: #eee;
+            border-radius: 10px;
+            box-shadow: inset 0px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #5F9EA0;
+            border-radius: 10px;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: #5F9EA0;
+            border-radius: 10px;
+        }
+}
+
+

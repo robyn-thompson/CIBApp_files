@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
        	$cnt++;
     	}
 	else $exp = $exp."N";
-	// if less than 5 yrs exp OR an additional 2 other criterion are not met then exit
+	// if less than 5 yrs exp OR no other criterion are met then exit
 	if (($yrs != "Y") OR ($cnt < 1)){
         header('Location: exitnoexpert.php');
         exit();

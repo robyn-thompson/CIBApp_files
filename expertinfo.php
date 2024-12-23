@@ -11,14 +11,13 @@
 </head>
 <body>
 
-<h1><u><b>Background Information</b></u></h1>
-<h4> To determine your expertise in the field please answer the following questions: </br>
-     (NB: only those deemed experts in the context of the study will be asked to complete the survey)</h4>
+<h2><u><b>Background Information</b></u></h2>
+<h4> Complete the checklist to determine if you are a suitable participant.</h4>
 
 	<form name="expertinfo" action="writeexpertdata.php" method="post">
 	<div class="form-control">
         <table>
-        	<tr><td><b>Select all that are applicable to you? </b></td><td>  </td></tr>
+        	<tr><td><b>Check all that apply to you </b></td><td>  </td></tr>
 	        <tr><td>I have worked in the energy sector for 5 or more years</td> 
 			    <td><input type="hidden" name="yrs" value="0" > <input type="checkbox" name="yrs" value="Y" >  </td></tr>
             <tr><td>I have authored a book, published an article, or presented at a conference in the energy field<br></td>
@@ -36,8 +35,14 @@
              <tr><td>None of the above are applicable to me</td>
 				<td><input type="hidden" name="none" value="0"><input type="checkbox" name="none" value="Y"> </td></tr>
                 </table>
-		<input type="submit" value="Save and Continue" />
+         	<table><tr><td><input type="button" value="Back" onclick="history.back();"></td>
+            	<td style ="width:100%"><input type="submit" value="Save and Continue" /></td></tr>
+            </table>
 	</div>	
+   
 	</form>
-
+	<div style="font-size:10px;"> This survey forms part of a Phd study being conducted at Durban University of Technology by Mrs RC Thompson <br>
+                                  To contact the researcher please email robynt@dut.ac.za<br><br></div>
+    <img src="DUTlogo.png" alt="DUT logo" width="100" height="50">
 </body>
+</html>

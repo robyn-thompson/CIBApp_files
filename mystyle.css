@@ -1,18 +1,18 @@
-	body {
-            background-color: #5F9EA0;
+		body {
+            background-color:#E0F7FA;
             font-family: Verdana;
             text-align: center;
         }
         form {
             background-color: #fff;
             max-width: 500px;
-            margin: 25px auto;
+            margin: 10px auto;
             padding: 10px 10px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
         }
         .form-control {
             text-align: left;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
         }
  
         /* Styling form-control Label */ 
@@ -24,7 +24,7 @@
         /* Styling form-control input, 
         select, textarea */
         .form-control table,
-		.form-control input,
+		/*.form-control input,*/
         .form-control select,
         .form-control textarea {
             border: 2px solid #777;
@@ -47,25 +47,79 @@
  
         /* Styling Button */
         .form-control input[type="submit"] {
-            background-color: #5F9EA0;
+            background-color: #E0F7FA;
             border: 1px solid #777;
             border-radius: 2px;
             font-family: inherit;
-            font-size: 18px;
+            font-size: 16px;
             display: block;
             width: 100%;
             margin-top: 20px;
             margin-bottom: 10px;
             cursor: pointer;
         }
-		 .form-control td {
-        	padding:10px 0;
+		.form-control input[type="button"]{
+            background-color:#D3D3D3 ;
+            border:1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;}
+		.form-control td {
+        	padding:10px 0px;
 		}
     	table,tr	{width:95%;}
 
 		a	{color: navy}
 
- progress {
+		.tooltip-container {
+            position: relative; /* Position relative for tooltip positioning */
+            display: inline; /* Allow the tooltip to work with inline elements */
+            cursor: pointer; /* Change cursor to indicate hover */
+        }
+
+        /* Tooltip styling */
+        .tooltip {
+            font-size:11px;
+            visibility: hidden; /* Hide tooltip by default */
+            width: 250px; /* Width of the tooltip */
+            background-color: #555; /* Background color of tooltip */
+            color: #fff; /* Text color */
+            text-align: center; /* Center text inside the tooltip */
+            border-radius: 5px; /* Rounded corners */
+            padding: 5px 5px; /* Padding inside the tooltip */
+            position: absolute; /* Position relative to the container */
+            z-index: 1; /* Stack on top of other elements */
+            bottom: 100%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -60px; /* Adjust to center */
+            opacity: 0; /* Start with opacity 0 */
+            transition: opacity 0.3s; /* Smooth transition */
+        }
+
+        /* Show tooltip on hover */
+        .tooltip-container:hover .tooltip {
+            visibility: visible; /* Show the tooltip */
+            opacity: 1; /* Fade in effect */
+        }
+		.mobile-only {
+    		display: none;
+		}
+
+		/* Show the item only on screens smaller than 768px (mobile devices) */
+		
+		}
+        .non-mobile {
+    		display: block;/* Or inline, flex, depending on your layout */
+            font-size:12px;
+		}
+
+		
+ 		progress {
             width: 100%;
          max-width: 500px;
             height: 20px;
@@ -91,7 +145,7 @@
             align-items: center;
             width: 100%;
             max-width: 500px;
-            margin: 20px auto;
+            margin: 0px auto;
         }
 		.label-left, .label-right {
             width: 20%;
@@ -102,13 +156,18 @@
             margin: 0 10px;
         }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+    .mobile-only {
+    	display: block; /* Or inline, flex, etc., depending on your layout */}
+    .non-mobile {
+        display: none;}
     .form-control table,
     .form-control input,
     .form-control label {
-        width: 100%;
-        display: block;
-        font-size:12px:
+        width: auto;
+        display:block;
+      
+        color: black;
     }
 
     .form-control td {
@@ -118,6 +177,7 @@
         display: flex;
         flex-direction: column;
     }
+    
      progress {
             width: 100%;
          	max-width: 500px;
